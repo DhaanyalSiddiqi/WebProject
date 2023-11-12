@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.purpose-info {
+    margin: 20px;
+}
+
+.image-container {
+    margin: 20px;
+    position: relative;
+}
+
+.interactive-image {
+    width: 100%;
+    height: auto;
+}
+
+.quiz-question {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+}
+
+.image-container:hover .quiz-question {
+    display: block;
+}
+
+/* Add more CSS for styling other elements, transitions, etc. */
