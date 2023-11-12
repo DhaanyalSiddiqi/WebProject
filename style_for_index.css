@@ -1,0 +1,114 @@
+h2 {
+    font-size: 200%;
+}
+
+p {
+    font-size: 150%;
+    border: 20px;
+}
+
+#line {
+    height:1px;
+    margin: 5px;
+    background-color: #c0ebff;
+}
+
+header {
+    background-image: url("grey_background.jpg");
+    background-attachment:local;
+    background-repeat: repeat;
+    align-items: right;
+    background-position: center;
+    
+}
+
+header h1 {
+    display: inline;
+    font-size: 500%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header img {
+    display: inline;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c0ebff;
+    color: #333;
+}
+
+.fullscreenimg {
+    max-width: 100%;
+    margin: auto;
+}
+
+header {
+    text-align: left;
+    padding: 20px;
+    color: #fff;
+    
+}
+
+nav {
+    background-color: #4c4c4c;
+    background-image: url("grey_background.jpg");
+    background-attachment:local;
+    background-repeat: repeat;
+    align-items: center;
+    background-position: center;
+}
+
+nav ul {
+    flex-direction: column;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border: 10px;
+    margin: 0px 0px;
+}
+
+nav a {
+    text-decoration:none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #4c4c4c;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+}
+
+#copyrightstatement {
+    padding: 10px;
+
+}
+
+/* Responsive design using media queries */
+@media screen and (min-width: 500px) {
+    nav ul {
+        flex-direction: row;
+        font-size: 150%;
+    }
+    #line {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .fullscreenimg {
+        float: right;
+        margin: 5px;
+        object-fit: contain;
+    }
+}
+
