@@ -1,35 +1,67 @@
-h2 {
+
+.h2 {
     font-size: 200%;
 }
 
 p {
     font-size: 150%;
-    border: 20px;
 }
 
-#line {
+.bright_line {
     height:1px;
     margin: 5px;
     background-color: #c0ebff;
 }
 
-header {
-    background-image: url("grey_background.jpg");
-    background-attachment:local;
-    background-repeat: repeat;
+.dark_line {
+    height:1px;
+    margin:0px;
+    background-color: #333;
+}
+
+header { 
     align-items: right;
-    background-position: center;
+    background-position: top;
     
 }
 
+nav {
+    background-image: url("grey_background.jpg");
+    background-attachment:local;
+    background-repeat: repeat;
+    align-items: center;
+    background-position: top;
+}
+
+nav ul {
+    flex-direction: column;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 10px;
+    margin: 0px;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.change_navbar {
+    padding: 5px;
+}
+
 header h1 {
-    display: inline;
-    font-size: 500%;
+    margin-top: 10px;
+    font-size: 390%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-header img {
-    display: inline;
+.descriptive_heading {
+    font-size: 25px;
+    font-family: Arial;
 }
 
 body {
@@ -43,37 +75,18 @@ body {
     margin: auto;
 }
 
+.sitemapimg {
+    max-width: 100%;
+    margin: auto;
+}
+
 header {
     text-align: left;
     padding: 20px;
-    color: #fff;
-    
+    color: #fff;  
 }
 
-nav {
-    background-color: #4c4c4c;
-    background-image: url("grey_background.jpg");
-    background-attachment:local;
-    background-repeat: repeat;
-    align-items: center;
-    background-position: center;
-}
 
-nav ul {
-    flex-direction: column;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    border: 10px;
-    margin: 0px 0px;
-}
-
-nav a {
-    text-decoration:none;
-    color: #fff;
-}
 
 main {
     padding: 20px;
@@ -83,9 +96,34 @@ section {
     margin-bottom: 20px;
 }
 
+.events_list {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 3px;
+    background-color: #354550;
+    border-radius: 10px;
+}
+
+.event_item {
+    background: #c0ebff;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    size: 5px;
+    text-align: center;
+}
+
+.styleless_list {
+    list-style-type: none;
+}
+
+.paddingless_list {
+    padding: 0px;
+}
+
 footer {
     background-color: #4c4c4c;
-    color: #fff;
+    color: #c0ebff;
     text-align: center;
     padding: 0px;
 }
@@ -94,32 +132,45 @@ footer {
     font-weight: bold;
 }
 
-.members_info{
-    margin-bottom: 1em;
-}
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-
 #copyrightstatement {
     padding: 10px;
+    margin-top: 0px;
 
 }
 
-/* Responsive design using media queries */
+.quest_size {
+    font-size: 110%;
+}
+
+.bullet_dl {
+    display: list-item;
+}
+
+#form_format {
+    margin: 30px;
+    margin-left: 0px;
+
+}
+
+.text_box {
+    padding: 10px;
+    border: 0px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 58, 128, 0.408);
+    border-radius: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#submit_box {
+    border-radius: 10px;
+    border: 200%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top_border {
+    border: 10px;
+}
+
+/* Responsive design using media queries*/
 @media screen and (min-width: 500px) {
     nav ul {
         flex-direction: row;
@@ -130,9 +181,45 @@ table {
         margin-right: 20px;
     }
     .fullscreenimg {
-        float: right;
-        margin: 5px;
-        object-fit: contain;
+        float: left;
+        max-width: 100%;
+        height: auto;
     }
+    .sitemapimg {
+        max-width: 100%;
+        height: auto;
+    }
+    .descriptive_heading {
+        font-size: 40px;
+        font-family: Arial;
+    }
+    header h1 {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    .change_navbar {
+        padding: 10px;
+        margin-top: 6px;
+    }
+
+    .change_navbar:hover {
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .footer:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        padding: 10px;
+        margin-top: 6px;
+    }
+
+    
+
 }
+
 

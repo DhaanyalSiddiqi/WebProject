@@ -1,19 +1,7 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
-.header {
-    text-align: center;
-    padding: 20px;
-}
-
-.purpose-info {
-    margin: 20px;
-}
 
 .image-container {
     margin: 20px;
-    position: relative;
+    margin-left: 0px;
 }
 
 .interactive-image {
@@ -23,15 +11,68 @@ body {
 
 .quiz-question {
     display: none;
-    position: absolute;
     top: 10px;
     left: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
     padding: 5px;
+    font-size: 110%;
 }
 
 .image-container:hover .quiz-question {
+    display:inline-flex;
+}
+
+.dashed_line {
+    height:1px;
+    margin: 0px;
+    background-color: #c0ebff;
+    border-top: dashed;
+}
+
+#green:hover {
+    color: green;
+}
+
+.red:hover {
+    color: red;
+}
+
+#letter_list {
+    list-style-type: upper-alpha;
+    margin-top: 17.6px;
+    margin-bottom: 17.6px;
+}
+
+.dropbtn {
+  background-color: #354550;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  margin: 15px;
+  margin-left: 0px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-text {
+    display: none;
+    position: none;
+    background-color: #354550;
+    min-width: 0px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    color: white;
+}
+
+.text {
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-text {
     display: block;
 }
 
-/* Add more CSS for styling other elements, transitions, etc. */
+.dropdown:hover .dropbtn {
+    background-color:green;
+}

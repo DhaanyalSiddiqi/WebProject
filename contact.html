@@ -11,36 +11,51 @@
 <body>
     <nav>
         <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="purpose.html">Purpose</a></li>
-                <li><a href="members.html">Membership</a></li>
-                <li><a href="meetings.html">Meetings & Papers</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        <hr id="line">
+            <li class="change_navbar"><a href="index.html">Home</a></li>
+            <li class="change_navbar"><a href="about_us.html">About Us</a></li>
+            <li class="change_navbar"><a href="members.html">Membership</a></li>
+            <li class="change_navbar"><a href="meetings.html">Meetings & Papers</a></li>
+            <li class="change_navbar"><a href="contact.html">Contact</a></li>
+        </ul>
+        <hr class="bright_line">
         <header>
             <img src = "SSLClogo.jpg" alt="logo" width="100">
-            <h1>Welcome to the Committee Website</h1>
+            <h1>Contact Us</h1>
         </header>
     </nav>
-    <form>
-        <label for="fname">email:</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <label for="lname">comments for:</label><br>
-        <input type="text" id="lname" name="lname" value=""><br><br>
-        <label for="lname">comments:</label><br>
-        <input type="text" id="lname" name="lname" value=""><br><br>
-        <input type="submit" value="Submit">
-    </form> 
-<footer>
-    <nav>
-        <ul>
-            <li><a href="accessibility.html">Accessibility</a></li>
-            <li><a href="legal.html">Legal & Security</a></li>
-            <li><a href="design.html">Design</a></li>
-            <li><a href="testing.html">Testing</a></li>
-        </ul>
-    </nav>
-    <p id="copyrightstatement">&copy; 2023 Dhaanyal Shahid Siddiqi</p>
-</footer>
+
+    <main>
+
+        <h2>Get in Touch!</h2>
+        <p>As the SSLC, we value the input and perspectives of our students and staff alike. This dedicated committee communication platform is open to you for open dialogue, allowing you to share your feedback, concerns, and suggestions related to your academic experience. If you have any inquiries, ideas, or matters you'd like to discuss with the SSLC, please do not hesitate to fill out this form. We encourage you to reach out and actively participate in shaping the educational landscape of your community.</p>
+        
+        <hr class="dark_line">
+        
+        <form id="form_format" action="mailto:dhaanyal.siddiqi@gmail.com">
+            <label for="fname">Email address:</label><br>
+            <input class="text_box" type="text" id="fname" name="fname" placeholder="Enter your email here"><br><br>
+            <label for="lname">Who is this comment for:</label><br>
+            <input class="text_box" type="text" id="lname" name="lname" placeholder="Name or Departmen"><br><br>
+            <label for="lname">Comment:</label><br>
+            <textarea class="text_box" type="text" id="lname" name="lname" placeholder="Your comment"></textarea><br><br>
+            <input id="submit_box" type="submit" value="Submit">
+        </form>   
+
+        <p>Direct email address: SSLC@university.ac.uk</p>
+
+        
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li class="footer"><a href="accessibility.html">Accessibility</a></li>
+                <li class="footer"><a href="legal.html">Legal & Security</a></li>
+                <li class="footer"><a href="design.html">Design</a></li>
+                <li class="footer"><a href="testing.html">Testing</a></li>
+            </ul>
+        </nav>
+        <p id="copyrightstatement">&copy; 2023 Dhaanyal Shahid Siddiqi</p>
+    </footer>
 </body>
+</html>
