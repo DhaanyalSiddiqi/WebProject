@@ -54,9 +54,15 @@ nav a {
 }
 
 header h1 {
-    margin-top: 10px;
-    font-size: 390%;
+    /*margin-top: 10px;*/
+    font-size: 250%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    vertical-align: center;
+}
+
+.testwlcm{
+    align-items: center;
 }
 
 .descriptive_heading {
@@ -82,10 +88,9 @@ body {
 
 header {
     text-align: left;
-    padding: 20px;
+    padding: 5px;
     color: #fff;  
 }
-
 
 
 main {
@@ -181,9 +186,11 @@ footer {
         margin-right: 20px;
     }
     .fullscreenimg {
-        float: left;
+        float: right;
         max-width: 100%;
-        height: auto;
+        height: 600px;
+        width: 500px;
+
     }
     .sitemapimg {
         max-width: 100%;
@@ -223,3 +230,12 @@ footer {
 }
 
 
+@media screen and (min-width: 700px) {
+    .fullscreenimg {
+        float: center;
+        max-width: 100%;
+        height: auto;
+
+
+    }
+}
